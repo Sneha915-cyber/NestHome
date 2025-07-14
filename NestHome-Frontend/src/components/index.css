@@ -1,0 +1,60 @@
+/* Common Component Styles */
+.material-symbols-rounded {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+  
+  .loading-spinner {
+    animation: spin 1s linear infinite;
+    border-top-color: transparent;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Navbar styles */
+  .mobile-menu-enter {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  
+  .mobile-menu-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .mobile-menu-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .mobile-menu-exit-active {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .dropdown-menu-enter {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  
+  .dropdown-menu-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 100ms, transform 100ms;
+  }
+  
+  .dropdown-menu-exit {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .dropdown-menu-exit-active {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 100ms, transform 100ms;
+  }
+  
